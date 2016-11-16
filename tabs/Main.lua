@@ -7,6 +7,11 @@
 -- This is the project for Group #2-2016
 -- This is the initialization Main code to get the game started
 
+-- this turns on Game Center simulation from the Helper Class
+-- this is so you can call Game Center code within Codea 
+-- and just set this boolean to "false" before you export to Xcode
+DEBUG_GAMECENTER = true
+
 -- Global variables to the entire project
 
 -- local variables to this scene
