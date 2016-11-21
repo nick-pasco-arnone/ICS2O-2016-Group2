@@ -7,7 +7,7 @@
 	<key>Buffer Order</key>
 	<array>
 		<string>Main</string>
-		<string>CompanyScene</string>
+		<string>CompanyLogoScene</string>
 		<string>HelperClass</string>
 	</array>
 	<key>Description</key>
