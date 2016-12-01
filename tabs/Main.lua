@@ -29,7 +29,7 @@ function setup()
     
     -- create the scenes
     Scene("companyLogoScene", CompanyLogoScene)
-    -- delete this line and add in the rest of your scenes
+    Scene("gameLogoScene", GameLogoScene)
     
     Scene.Change("companyLogoScene")
 end

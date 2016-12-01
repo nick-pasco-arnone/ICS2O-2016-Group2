@@ -1,19 +1,19 @@
 -- ICS2O-2016-Group2
--- CompanyLogoScene
+-- GameLogoScene
 
 -- Created by: Mr. Coxall
 -- Created on: Nov-2016
 -- Created for: ICS2O
 -- This is the project for Group #2-2016
--- This is the first scene to show up, the company logo.
+-- This is the second scene to show up, the game logo.
 
-CompanyLogoScene = class()
+GameLogoScene = class()
 
 -- local variables to this scene
-local startTime
+
 
 -- Use this function to perform your initial setup for this scene
-function CompanyLogoScene:init()
+function GameLogoScene:init()
     -- set up display options
     supportedOrientations(LANDSCAPE_ANY)
     noFill()
@@ -22,22 +22,19 @@ function CompanyLogoScene:init()
     pushStyle()  
     
     -- scene setup code here
-    startTime = ElapsedTime
     
 end
 
-function CompanyLogoScene:draw()
+function GameLogoScene:draw()
     -- Codea does not automatically call this method
     
-    background(255, 0, 0, 255)
-    sprite("Project:companyBackground", WIDTH/2, HEIGHT/2, WIDTH, HEIGHT)
+    background(0, 217, 255, 255)
+    
     -- Do your drawing here
-    if(startTime + 2 < ElapsedTime) then
-        Scene.Change("gameLogoScene")
-    end
+    sprite("Project:gameBackground", WIDTH/2, HEIGHT/2, WIDTH, HEIGHT)
 end
 
-function CompanyLogoScene:touched(touch)
+function GameLogoScene:touched(touch)
     -- Codea does not automatically call this method
     
     -- Do your touch code here

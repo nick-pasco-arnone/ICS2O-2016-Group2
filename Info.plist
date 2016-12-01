@@ -8,6 +8,7 @@
 	<array>
 		<string>Main</string>
 		<string>CompanyLogoScene</string>
+		<string>GameLogoScene</string>
 		<string>HelperClass</string>
 	</array>
 	<key>Description</key>
