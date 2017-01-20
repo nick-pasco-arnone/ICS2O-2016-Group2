@@ -13,6 +13,16 @@
 		<string>Test</string>
 		<string>Test1</string>
 		<string>HelperClass</string>
+		<string>Anagrams</string>
+		<string>MainGameScene</string>
+		<string>Colours</string>
+		<string>ColoursNames</string>
+		<string>Fireworks</string>
+		<string>Font</string>
+		<string>Touch</string>
+		<string>UTF8</string>
+		<string>UTF8Case</string>
+		<string>Words</string>
 	</array>
 	<key>Description</key>
 	<string>No description available</string>
