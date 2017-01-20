@@ -1,7 +1,7 @@
 -- ICS2O-2016-Group2
 -- GameLogoScene
 
--- Created by: Mr. Coxall
+-- Created by: Jeremy Dwyer
 -- Created on: Nov-2016
 -- Created for: ICS2O
 -- This is the project for Group #2-2016
@@ -22,16 +22,20 @@ function GameLogoScene:init()
     pushStyle()  
     
     -- scene setup code here
+     -- scene setup code here
+    startTime = ElapsedTime
     
 end
 
 function GameLogoScene:draw()
     -- Codea does not automatically call this method
     
-    background(0, 217, 255, 255)
-    
+  background(0, 207, 255, 255)
+    sprite("Dropbox:gameLogo", WIDTH/2, HEIGHT/2, WIDTH, HEIGHT)
     -- Do your drawing here
-    sprite("Project:gameBackground", WIDTH/2, HEIGHT/2, WIDTH, HEIGHT)
+    if(startTime + 3 < ElapsedTime) then
+        Scene.Change("testScene")
+    end
 end
 
 function GameLogoScene:touched(touch)

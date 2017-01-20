@@ -1,19 +1,19 @@
 -- ICS2O-2016-Group2
--- CompanyLogoScene
+-- MainMenuScene
 
 -- Created by: Jeremy Dwyer
 -- Created on: Nov-2016
 -- Created for: ICS2O
 -- This is the project for Group #2-2016
--- This is the first scene to show up, the company logo.
+-- This is the main menu
 
-CompanyLogoScene = class()
+MainMenuScene = class()
 
 -- local variables to this scene
-local startTime
+local startButton
 
 -- Use this function to perform your initial setup for this scene
-function CompanyLogoScene:init()
+function MainMenuScene:init()
     -- set up display options
     supportedOrientations(LANDSCAPE_ANY)
     noFill()
@@ -23,23 +23,20 @@ function CompanyLogoScene:init()
     
     -- scene setup code here
     startTime = ElapsedTime
-    
 end
 
-function CompanyLogoScene:draw()
+function MainMenuScene:draw()
     -- Codea does not automatically call this method
     
-    background(255, 0, 0, 255)
-    sprite("Dropbox:companyLogoImage", WIDTH/2, HEIGHT/2, WIDTH, HEIGHT)
-    -- Do your drawing here
-    if(startTime + 2 < ElapsedTime) then
-        Scene.Change("gameLogoScene")
+    background(219, 142, 13, 255)
+    sprite("Dropbox:Background Fade", WIDTH/2, HEIGHT/2, WIDTH, HEIGHT)
+  -- Do your drawing here
     end
-end
 
-function CompanyLogoScene:touched(touch)
+function MainMenuScene:touched(touch)
     -- Codea does not automatically call this method
     
     -- Do your touch code here
-    
+  
+   
 end
