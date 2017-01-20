@@ -30,21 +30,25 @@ function setup()
     -- create the scenes
     Scene("companyLogoScene", CompanyLogoScene)
     Scene("gameLogoScene", GameLogoScene)
-    
+    Scene("mainMenuScene", MainMenuScene)
+    Scene("testScene", Test)
+    Scene("test1Scene", Test1)
     Scene.Change("companyLogoScene")
 end
 
 -- This function gets called once every frame
 function draw()
     -- This sets a dark background color 
-    background(0, 0, 0, 255)
+    background(255, 191, 0, 255)
 
     -- Do your drawing here
-    Scene.Draw() 
+    Scene.Draw()
+
 end
 
 -- This function gets called once every frame
 function touched(touch)
+  
     -- Do your touching code here
     Scene.Touched(touch) 
 end
